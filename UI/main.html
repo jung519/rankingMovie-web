@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Movie</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            width: 1600px;
+            margin: 0px auto;
+        }
+        .rm_header {
+            margin: 0px 200px;
+            width: 1200px;
+            height: 80px;
+            background-color: bisque;
+            display: flex;
+            justify-content:space-around;
+        }
+        .rm_logo {
+            background-color:lightyellow;
+        }
+        .rm_account {
+            background-color:lightskyblue;
+        }
+        .rm_nav {
+            display: flex;
+            background-color:indigo;
+        }
+        .rm_nav div {
+            margin: 20px;
+            width: 200px;
+            background-color:whitesmoke;
+        }
+        .rm_body {
+            width: 1600px;
+            background-color:gray;
+            display: flex;
+        }
+        .rm_ads_left {
+            width: 200px;
+            background-color:darkgreen;
+        }
+        .rm_ads_right {
+            width: 200px;
+            background-color:darkolivegreen;
+        }
+        .rm_main {
+            width: 1200px;
+            background-color:darkgray;
+            display: grid;
+            grid-template-columns: 600px 600px;
+            grid-template-rows: 400px 400px;
+        }
+        .rm_top5_week {
+            background-color:khaki;
+            margin: 10px;
+        }
+        .rm_top5_day {
+            background-color:lavender;
+            margin: 10px;
+        }
+        .rm_user_posts {
+            background-color:lavenderblush;
+            margin: 10px;
+        }
+        .rm_user_reply {
+            background-color:lawngreen;
+            margin: 10px;
+        }
+        .rm_footer {
+            width: 1600px;
+            height: 200px;
+            background-color:darkorange;   
+        }
+    </style>
+</head>
+<body>
+    <div class="rm_header">
+        <div class="rm_logo">ranking movie</div>
+        <div class="rm_nav">
+            <div>박스오피스</div>
+            <div>내방</div>
+            <div>수다방</div>
+        </div>
+        <div class="rm_account">
+            <div>로그인</div>
+        </div>
+    </div>
+    <div class="rm_body">
+        <div class="rm_ads_left">ads</div>
+        <div class="rm_main">
+            <div class="rm_top5_week">주간 top5</div>
+            <div class="rm_top5_day">일일 top5</div>
+            <div class="rm_user_posts">게시글</div>
+            <div class="rm_user_reply">리플</div>
+        </div>
+        <div class="rm_ads_right">ads</div>
+    </div>
+    <div class="rm_footer">footer</div>
+</body>
+</html>
