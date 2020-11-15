@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Office</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      width: 1600px;
+      margin: 0px auto;
+    }
+    .rm_pc {
+      display:initial;
+    }
+    .rm_mobile {
+      display: none;
+    }
+    .rm_header {
+      margin: 0px 200px;
+      width: 1200px;
+      height: 80px;
+      background-color: bisque;
+      display: flex;
+      justify-content:space-around;
+    }
+    .rm_logo {
+      background-color:lightyellow;
+      align-self: center;
+      /* flex: 1 1 auto; */
+    }
+    .rm_account {
+      background-color:lightskyblue;
+      align-self: center;
+      /* flex: 1 1 auto; */
+    }
+    .rm_nav {
+      display: flex;
+      background-color:indigo;
+      /* flex: 1 1 auto; */
+    }
+    .rm_nav div {
+      margin: 20px;
+      width: 200px;
+      background-color:whitesmoke;
+      align-self: center;
+      text-align: center;
+    }
+    .rm_body {
+      width: 1600px;
+      background-color:gray;
+      display: flex;
+    }
+    .rm_ads_left {
+      width: 200px;
+      background-color:darkgreen;
+    }
+    .rm_ads_right {
+      width: 200px;
+      background-color:darkolivegreen;
+    }
+    .rm_main {
+      width: 1200px;
+      background-color:darkgray;
+      height: 800px;
+    }
+
+
+    .rm_footer {
+      width: 1200px;
+      height: 200px;
+      margin: 0 200px;
+      background-color:darkorange;   
+    }
+
+    @media(max-width: 700px) {
+      body {
+        width: unset;
+      }
+      .rm_pc {
+        display: none;
+      }
+      .rm_mobile {
+        display: initial;
+      }
+      .rm_m_header {
+        background-color:darkorange;
+        display:flex;
+        justify-content: center;
+        height: 80px;
+      }
+      .rm_m_header > .rm_m_logo {
+        background-color:lavenderblush;
+        align-self: center;
+      }
+      .rm_m_header > .rm_m_menu {
+        background-color:lightcyan;
+        align-self: center;
+        position: absolute;
+        right: 20px;
+      }
+
+      .rm_m_footer {
+        background-color:mediumpurple;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rm_pc">
+    <div class="rm_header">
+      <div class="rm_logo">ranking movie</div>
+      <div class="rm_nav">
+          <div>박스오피스</div>
+          <div>내방</div>
+          <div>수다방</div>
+      </div>
+      <div class="rm_account">
+          <div>로그인</div>
+      </div>
+    </div>
+    <div class="rm_body">
+      <div class="rm_ads_left">ads</div>
+      <div class="rm_main">
+        <!--  -->
+      </div>
+      <div class="rm_ads_right">ads</div>
+    </div>
+    <div class="rm_footer">footer</div>
+  </div>
+  <div class="rm_mobile">
+    <div class="rm_m_header">
+      <div class="rm_m_logo">ranking movie</div>
+      <div class="rm_m_menu">...</div>
+    </div>
+    <div class="rm_m_body">
+      <!--  -->
+    </div>
+    <div class="rm_m_footer">footer</div>
+  </div>
+</body>
+</html>
