@@ -11,7 +11,7 @@
             padding: 0px;
         }
         body {
-            /* width: 1600px; */
+            width: 1600px;
             margin: 0px auto;
         }
         .rm_pc {
@@ -30,18 +30,25 @@
         }
         .rm_logo {
             background-color:lightyellow;
+            align-self: center;
+            /* flex: 1 1 auto; */
         }
         .rm_account {
             background-color:lightskyblue;
+            align-self: center;
+            /* flex: 1 1 auto; */
         }
         .rm_nav {
             display: flex;
             background-color:indigo;
+            /* flex: 1 1 auto; */
         }
         .rm_nav div {
             margin: 20px;
             width: 200px;
             background-color:whitesmoke;
+            align-self: center;
+            text-align: center;
         }
         .rm_pc > .rm_body {
             width: 1600px;
@@ -80,12 +87,16 @@
             margin: 10px;
         }
         .rm_footer {
-            width: 1600px;
+            width: 1200px;
             height: 200px;
+            margin: 0 200px;
             background-color:darkorange;   
         }
 
         @media(max-width: 700px) {
+            body {
+                width:unset;
+            }
             .rm_pc {
                 display: none;
             }
